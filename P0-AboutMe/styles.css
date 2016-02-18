@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.header-content {
+  height: 100%;
+}
+
+header {
+  height: 25vw;
+  max-height: 125px;
+  width: 100%;
+}
+
+.udacity-logo {
+  max-height: 100%;
+  width: 20%;
+  float: left;
+}
+
+h1 {
+  float: left;
+  color: #93253C;
+  font-size: 1.5em;
+  padding-top: 5%;
+  width: 80%;
+  font-weight: normal;
+  /* The webkit is an unknow vendor extension when trying to Validate using W3C CSS Validator */
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 464px) and (min-width: 381px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 465px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header-content {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-content {
+    padding-top: 5px;
+  }
+}
+
+/* css animation W3C CSS Validation Services has not implemented this at-rule yet */
+
+@-webkit-keyframes mypicture {
+  from {border: 1px solid white;}
+  to {border: 1px solid gray;}
+}
+
+@-webkit-keyframes hero {
+  from {background-color: #FBEEF0;}
+  to {background-color: #93253C;}
+}
+
+/* MAIN SECTIONS */
+
+.hero {
+  padding: 1em;
+  max-width: 100%;
+  background-color: #93253C;
+  color: white;
+  /* Change color from lgihter to darker shade after loading using css animation -- works in opera, chrome, safari and IE9+ */
+  animation-name: hero;
+  animation-duration: 3s;
+}
+
+.my-picture {
+  display: block;
+  margin: 40px auto 10px;
+  max-width: 100%;
+  border: 1px solid white;
+  animation-name: mypicture;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  /* The webkit is an unknow vendor extension when trying to Validate using W3C CSS Validator */
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.iama {
+  max-width: 100%;
+  color: #969696;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  margin: 0;
+}
+
+.my-info {
+  color: #D65564;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  font-family: 'Lobster', cursive;
+  font-size: 1.15em;
+}
+
+.my-info:last-of-type {
+  margin: 0;
+}
+
+.my-name {
+  color: white;
+}
+
+.about-me {
+  padding: 1em;
+}
