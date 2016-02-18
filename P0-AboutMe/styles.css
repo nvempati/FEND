@@ -91,7 +91,7 @@ h1 {
   color: white;
   /* Change color from lgihter to darker shade after loading using css animation -- works in opera, chrome, safari and IE9+ */
   animation-name: hero;
-  animation-duration: 3s;
+  animation-duration: 4s;
 }
 
 .my-picture {
